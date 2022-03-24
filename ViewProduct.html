@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="ViewProduct.css" />
+  <link rel="stylesheet" href="/navbar.css">
+  <script src="ViewProduct.js"></script>
+</head>
 
-  <body>
-    <div id="container"></div>
-  </body>
+<body>
+  <div id="container"></div>
+  <div id="main_container">
+    <div id="left_box">
+      <div>
+        <img class="lg_img" id="pro_img" src="" alt="" />
+      </div>
+      <div id="sub_left_box">
+        <div>
+          <img class="sm_img" id="pro_img_1" src="" alt="" />
+        </div>
+        <div>
+          <img class="sm_img" id="pro_img_2" src="" alt="" />
+        </div>
+        <div>
+          <img class="sm_img" id="pro_img_3" src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="right_box">
+      <h1 id="brand"></h1>
+      <br />
+      <h3 id="title"></h3>
+      <br />
+      <p id="size_1"></p>
+      <br /><br />
+      <div id="size_2" class="size_box">
+        <br />
+        <p></p>
+      </div>
+      <br />
+      <p class="lg_txt" id="price"></p>
+      <div id="bag_div">
+        <div>
+          <select name="" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div><button id="bag_btn">Add to bag</button></div>
+      </div>
+      <div>
+        <p id="detail_head">PRODUCT DETAILS</p>
+        <ul>
+          <li id="details">
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>
 <!-- --------------COPY THE ENTRIE BELOW CODE FOR NAVBAR------------------------ -->
 <script type="module">
@@ -25,7 +75,6 @@
 
   let container = document.getElementById("container");
   container.innerHTML = navbar;
-
   let searchButton = document.getElementById("searchButton");
   searchButton.addEventListener("click", () => {
     //Redirect to another page

@@ -3,6 +3,7 @@ body {
 }
 
 
+
 #cont {
   width: 100%;
   height: 107px;
@@ -12,7 +13,7 @@ body {
   display: inline-flex;
   background-color: rgb(255, 255, 255);
   position: fixed;
-  z-index: 3;
+  z-index: 1;
 }
 
 #searchBar {
@@ -65,17 +66,6 @@ body {
   color: #a9307c;
   margin-right: 40px;
   font-size: 32px;
-  display: flex;
-}
-
-#userprofile{
-  font-size: 16px;
-  width: 60px;
-  height: 20px;
-  margin-left: 10px;
-  text-align: start;
-  margin-top: 5px;
-  cursor: pointer;
 }
 
 #wishlist_icon {
@@ -98,7 +88,6 @@ body {
 /*Harshit*/
 
 #navbar {
-  z-index: 3;
   position: fixed;
   top: 0;
   background-color: rgb(98, 51, 129);
@@ -135,4 +124,18 @@ a:hover {
   background-color: white;
   color: rgb(98, 51, 129);
   text-decoration: underline;
+}
+
+#search_div {
+  max-height: 400px;
+  width: 412px;
+  position: fixed;
+  background-color: white;
+  color: black;
+  z-index: 2;
+}
+#search_sub_div {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  cursor: pointer;
 }
